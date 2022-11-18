@@ -11,3 +11,6 @@ Publication Link: https://ieeexplore.ieee.org/document/9673634
 - [Nakul S Pramod](https://www.linkedin.com/in/nakul-s-pramod-6ba2041a0/)
 - [Swathy Mohanlal](https://www.linkedin.com/in/swathy-mohanlal-b94246198/)
 - [Sajitha L](https://www.linkedin.com/in/sajitha-l-739036182/)
+
+### Instructions
+- Data Set : https://archive.ics.uci.edu/ml/datasets/parkinsons
