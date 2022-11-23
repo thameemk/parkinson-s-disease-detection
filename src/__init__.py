@@ -5,4 +5,4 @@
 
 from .load_data_set import load_data_set
 from .split_data_set import split_train_and_test_data
-from .feature_scaling import feature_scaling_standard_scalar
+from .feature_scaling import feature_scaling_standard_scalar, feature_scaling_pca
