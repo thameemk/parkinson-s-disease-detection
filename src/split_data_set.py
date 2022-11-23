@@ -2,6 +2,8 @@
 #  Filename : split_data_set.py
 #  Author : thameem
 #  Modified time : Sat, 19 Nov 2022 at 12:08 am India Standard Time
+from sklearn.model_selection import train_test_split
+
 
 def split_train_and_test_data(x, y):
     """
