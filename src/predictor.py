@@ -7,29 +7,29 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
 from xgboost import XGBClassifier
 
-from src.enums import Predictors
+from src.enums import Classifiers
 
 
-def predictor(x_train, y_train, x_test, preditor: Predictors):
+def predictor(x_train, y_train, x_test, classifier: Classifiers):
     """
     fitting the data to respective classifier and predict the result
     Args:
         x_train:
         y_train:
         x_test:
-        preditor:
+        classifier:
 
     Returns:
-
+        The predicted result -  y_pred
     """
 
-    if preditor == Predictors.KNN:
+    if classifier == Classifiers.KNN:
         classifier = KNeighborsClassifier(n_neighbors=8, p=2, metric='minkowski')
-    elif preditor == Predictors.SVM:
+    elif classifier == Classifiers.SVM:
         classifier = SVC()
-    elif preditor == Predictors.XG_BOOST:
+    elif classifier == Classifiers.XG_BOOST:
         classifier = XGBClassifier()
-    elif preditor == Predictors.RANDOM_FOREST:
+    elif classifier == Classifiers.RANDOM_FOREST:
         classifier = RandomForestClassifier(n_estimators=16, criterion="entropy", random_state=0)
     else:
         raise NotImplemented()

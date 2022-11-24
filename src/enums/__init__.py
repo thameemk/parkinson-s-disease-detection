@@ -3,4 +3,4 @@
 #  Author : thameem
 #  Modified time : Thu, 24 Nov 2022 at 10:08 pm India Standard Time
 
-from .predictors import Predictors
+from .classifiers import Classifiers

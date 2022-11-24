@@ -3,8 +3,8 @@
 #  Author : thameem
 #  Modified time : Thu, 24 Nov 2022 at 10:52 pm India Standard Time
 from src import load_data_set, split_train_and_test_data, feature_scaling_standard_scalar, predictor, \
-    get_cm_and_accuracy
-from src.enums import Predictors
+    get_cm_and_accuracy, print_result
+from src.enums import Classifiers
 
 if __name__ == '__main__':
     x, y = load_data_set()
@@ -13,8 +13,8 @@ if __name__ == '__main__':
 
     x_train, x_test = feature_scaling_standard_scalar(x_train, x_test)
 
-    y_pred = predictor(x_train, y_train, x_test, Predictors.SVM)
+    y_pred = predictor(x_train, y_train, x_test, Classifiers.SVM)
 
-    cm, accuracy = get_cm_and_accuracy(y_test, y_pred)
+    confusion_matrix, accuracy = get_cm_and_accuracy(y_test, y_pred)
 
-    print(cm, accuracy * 100)
+    print_result(Classifiers.SVM, confusion_matrix, accuracy)
