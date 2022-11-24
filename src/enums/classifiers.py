@@ -5,7 +5,7 @@
 import enum
 
 
-class Predictors(enum.Enum):
+class Classifiers(enum.Enum):
     XG_BOOST = "XGBoost"
     KNN = "K-Nearest Neighbor"
     SVM = "Support Vector Machine"
