@@ -6,7 +6,7 @@ import enum
 
 
 class Predictors(enum.Enum):
-    XG_BOOST = "XG_BOOST"
-    KNN = "KNN"
-    SVM = "SVM"
-    RANDOM_FOREST = "RANDOM_FOREST"
+    XG_BOOST = "XGBoost"
+    KNN = "K-Nearest Neighbor"
+    SVM = "Support Vector Machine"
+    RANDOM_FOREST = "Random Forest"
