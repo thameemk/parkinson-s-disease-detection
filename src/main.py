@@ -13,8 +13,7 @@ if __name__ == '__main__':
 
     x_train, x_test = feature_scaling_standard_scalar(x_train, x_test)
 
-    y_pred = predictor(x_train, y_train, x_test, Classifiers.SVM)
+    for classifier in Classifiers:
+        confusion_matrix, accuracy = get_cm_and_accuracy(y_test, predictor(x_train, y_train, x_test, classifier))
 
-    confusion_matrix, accuracy = get_cm_and_accuracy(y_test, y_pred)
-
-    print_result(Classifiers.SVM, confusion_matrix, accuracy)
+        print_result(classifier, confusion_matrix, accuracy)
