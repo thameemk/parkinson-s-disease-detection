@@ -13,5 +13,5 @@ def print_result(classifier: Classifiers, confusion_matrix, accuracy) -> None:
         confusion_matrix: the confusion matrix
         accuracy: accuracy of the model used
     """
-    print("====", classifier, "====\n\n\nConfusion Matrix:\n\n", confusion_matrix, "\n\n Accuracy: ", accuracy * 100,
-          "\n\n===================\n\n")
+
+    print(f"\n===== {classifier.value} =====\nConfusion Matrix: \n {confusion_matrix}\nAccuracy: {accuracy * 100}")
